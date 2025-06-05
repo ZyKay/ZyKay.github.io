@@ -9,6 +9,12 @@
 <body>
   <header>
     <h1>Evann BELOT</h1>
+    <div class="nav-toggle" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
@@ -92,4 +98,11 @@
     <p>&copy; 2025 Evann BELOT. Tous droits réservés.</p>
   </footer>
 </body>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('show');
+  }
+</script>
+
 </html>
